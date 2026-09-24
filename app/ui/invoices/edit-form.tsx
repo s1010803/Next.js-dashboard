@@ -122,6 +122,11 @@ export default function EditInvoiceForm({
               </div>
             </div>
           </div>
+          <div id="updateInvoice-error" aria-live="polite" aria-atomic="true">
+            {state.errors && (
+              <p className="mt-2 text-sm text-red-500">{state.message}</p>
+            )}
+          </div>
         </fieldset>
       </div>
       <div className="mt-6 flex justify-end gap-4">
